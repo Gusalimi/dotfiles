@@ -149,4 +149,4 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
-@import "/home/guillaume/.local/share/rofi/themes/base16-material-palenight.rasi"
+@import "~/.local/share/rofi/themes/base16-material-palenight.rasi"
