@@ -1,0 +1,51 @@
+\documentclass[a4paper]{article}
+\usepackage[left=20mm, right=20mm, top=20mm, bottom=20mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath, amssymb} % Add basic math functions
+\usepackage[fleqn]{mathtools}
+\usepackage{array} % For tables
+\usepackage{graphicx} % Allows to insert .png and .jpg
+\usepackage{esvect} % For vectors
+\usepackage{csquotes} % Easily manage quotes
+\usepackage{tabularx} % Tables
+\usepackage{fancyhdr} % Header and footer
+\usepackage{ntheorem} % Theorems
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{mdframed}
+\usepackage{tcolorbox}
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{hyperref} % Links become clickable
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=cyan,
+    pdftitle={{{FILEP}} - {{FILE}}},
+}
+
+\newcommand{\N}{\mathbb{N}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\D}{\mathbb{D}}\newcommand{\Q}{\mathbb{Q}}\newcommand{\R}{\mathbb{R}}\newcommand{\C}{\mathbb{C}}
+
+% Create \exo{} and \begin{questions}
+\newcommand{\exo}[1]{\begin{tcolorbox}[hbox, boxrule=1px]
+Exercice #1 :
+\end{tcolorbox}}
+\newenvironment{questions}{
+\begin{enumerate}[label=\arabic*)]
+}{\end{enumerate}}
+% \stepcounter{enumi} to skip a question number
+
+% Header and footer
+\pagestyle{fancy}
+\fancyhead[L]{{{FILEP}}}
+\fancyhead[C]{{{FILE}}}
+\fancyhead[R]{{{NAME}}}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+{{CURSOR}}
+
+\end{document}
