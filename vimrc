@@ -44,6 +44,9 @@ Plug 'tibabit/vim-templates'
 
 call plug#end()
 
+" CoC extensions
+let g:coc_global_extensions = ['coc-clangd', 'coc-cmake', 'coc-css', 'coc-cssmodules', 'coc-diagnostic', 'coc-docker', 'coc-emmet', 'coc-eslint', 'coc-explorer', 'coc-fzf-preview', 'coc-git', 'coc-highlight', 'coc-html', 'coc-htmlhint', 'coc-html-css-support', 'coc-json', 'coc-lightbulb', 'coc-markdownlint', 'coc-prettier', 'coc-pyright', 'coc-sh', 'coc-stylelintplus', 'coc-snippets', 'coc-spell-checker', 'coc-sql', 'coc-svg', 'coc-tailwindcss', 'coc-texlab', 'coc-tsserver', 'coc-webview', 'coc-xml', 'coc-yaml', 'coc-vimlsp']
+
 " Colorscheme
 colorscheme onehalfdark
 highlight Normal ctermbg=NONE
