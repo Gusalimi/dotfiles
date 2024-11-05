@@ -48,14 +48,14 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Yggdroot/indentLine'
-Plug 'morhetz/gruvbox'
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'simeji/winresizer'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'lervag/vimtex'
 Plug '42Paris/42header'
-Plug 'preservim/nerdcommenter'
+Plug 'numToStr/Comment.nvim'
 Plug 'tpope/vim-surround'
 Plug 'dense-analysis/ale'
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -73,7 +73,7 @@ call plug#end()
 
 " Colorscheme:
 set t_Co=256
-colorscheme gruvbox
+colorscheme catppuccin
 highlight Normal ctermbg=NONE
 highlight NonText ctermbg=NONE
 highlight LineNr ctermbg=NONE
@@ -81,7 +81,7 @@ highlight LineNr ctermbg=NONE
 
 " Airline:
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme = 'gruvbox'
+let g:airline_theme = 'catpuccin'
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#clock#format = '%H:%M:%S'
 let g:airline#extensions#clock#updatetime = 1000
